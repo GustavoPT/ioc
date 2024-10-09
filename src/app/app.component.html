@@ -1,0 +1,26 @@
+<ion-app>
+  <ion-content class="ion-padding">
+    <ion-searchbar placeholder="Custom Placeholder"></ion-searchbar>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" size-md="4" *ngFor="let card of cards">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>{{ card.title }}</ion-card-title>
+            </ion-card-header>
+            <img
+              alt="Silhouette of mountains"
+              src="https://ionicframework.com/docs/img/demos/card-media.png"
+            />
+            <ion-card-content>
+              {{ card.content }}
+            </ion-card-content>
+            <ion-button fill="clear" onclick="t()">Action 1</ion-button>
+            <ion-button fill="clear">Action 2</ion-button>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</ion-app>

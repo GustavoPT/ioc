@@ -1,0 +1,7 @@
+@media (min-width: 768px) {
+  ion-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
